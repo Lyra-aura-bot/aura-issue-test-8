@@ -13,7 +13,7 @@ def compute(a, b, op):
     elif op == "div":
         # BUG: uses integer division and swallows ZeroDivisionError
         try:
-            return a // b
+            return a / b
         except ZeroDivisionError:
             return None
     else:
